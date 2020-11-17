@@ -7,6 +7,8 @@ from config import Config
 app = Flask(__name__)
 app.config.from_object(Config)
 
-db = SQLAlchemy(app)
-migrate = Migrate(app, db)
 bootstrap = Bootstrap(app)
+db = SQLAlchemy(app)
+migrate = Migrate(app)
+
+from app import routes
