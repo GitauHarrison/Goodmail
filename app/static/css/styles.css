@@ -21,16 +21,13 @@ body::after {
 p{
     padding-bottom: 5px;
 }
-h4{
-    padding-bottom: 30px;
-}
 /* MEDIA QUIERIES */
 @media all and (max-width: 992px) {
     body::after {
         height: 150px; /* Set same as footer's height when not using media queries*/
     }
     .footer{
-        height: 100px;
+        height: 270px;
     }
 }
 @media all and (min-width: 992px) {
@@ -38,7 +35,7 @@ h4{
         height: 50px; /* Set same as footer's height when not using media queries*/
     }
     .footer{
-        height: 50px;
+        height: 130px;
     }
 }
 

@@ -38,31 +38,34 @@
         </div>
     </nav>
 
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-            {% for message in messages %}
-            <div class="alert alert-primary" role="alert"> {{ message }} </div>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
-{% endblock %}
+    <div class="container">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-info" role="alert"> {{ message }} </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
 
-{% block content %}
-
-    {% block app_content %}
+        {% block app_content %}
         <!-- Your Body Content Goes Here -->
         
-    {% endblock %}
+        {% endblock %}
+    </div>
 
     {% block footer %}    
         <nav class="footer navbar navbar-default">
             <div class="container">   
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">                         
-                    <ul class="nav navbar-nav">                
-                        <li><a href="#">YouTube</a></li>                 
+                    <ul class="nav navbar-nav"> 
+                        <p><strong>Location</strong></p>    
+                        <p>Nairobi Garage,</p>
+                        <p>Nairobi, Kenya</p>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">                                             
-                        <li><a href="#">GitHub</a></li>                      
+                    <ul class="nav navbar-nav navbar-right">  
+                        <p><strong>Contact</strong></p>                                             
+                        <p>Phone: 0700 777 822 </p>
+                        <p>Email: email@example.com </p>
                     </ul> 
                 </div>                                  
             </div>
