@@ -3,12 +3,12 @@ from flask import render_template, url_for, flash, redirect
 from app.forms import HomeForm
 from app.models import User
 
-@app.route('/')
+@app.route('/', methods = ['GET', 'POST'])
 @app.route('/home', methods = ['GET', 'POST'])
 def home():
     form = HomeForm()
     if form.validate_on_submit():
-        user = User(username = form.username.data, email = form.email.data, site = form.site.data)
+        user = User(username = form.username.data, email = form.email.data, site_url = form.site_url.data)
         db.session.add(user)
         db.session.commit()
         flash('Your data was saved successfully!')
