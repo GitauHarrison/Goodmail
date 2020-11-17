@@ -33,8 +33,14 @@
                             It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                         </p>
                     </div>
-                </div>  
+                </div>  <hr>
+
+                <!-- Display Flash Messages Here -->
+                {% include '_flash_message.html' %}
+                
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 my-form">
+
+                    <!-- Home Form -->
                     {{ wtf.quick_form(form) }}
                 </div>          
             </div>
