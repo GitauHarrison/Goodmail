@@ -12,6 +12,7 @@ def home():
         db.session.add(user)
         db.session.commit()
         flash('Your data was saved successfully!')
+        return redirect(url_for('home'))
     return render_template('home.html', title = 'Home', form = form)
 
 @app.route('/about')
