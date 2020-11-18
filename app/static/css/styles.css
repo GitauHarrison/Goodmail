@@ -40,6 +40,14 @@ h1{
     .footer{
         height: 130px;
     }
+    .scrollable{        
+        overflow-y: scroll;
+        overflow: hidden;
+        position: relative;
+    }
+    .fixed{
+        position: fixed;
+    }
 }
 
 /* ------------------------------------------------- */
