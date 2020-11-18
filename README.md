@@ -32,9 +32,9 @@ $ flask run
 
 Paste this URL http://127.0.0.1:5000/ on your browser's address bar to see the web application.
 
-You can use `ngrok` to test the application on another device while the it is running on localhost. Check your terminal for something like: 
+You can use `ngrok` to test the application on another device while it is running on localhost. Check your terminal for something like: 
 
 ```python
 * Tunnel URL:  NgrokTunnel: "http://946be86da16b.ngrok.io" -> "http://localhost:5000"
 ```
-Paste the URL `http://946be86da16b.ngrok.io` to your mobile phone (or another device) to see the application.
+Paste the URL `http://<random-string>.ngrok.io` to your mobile phone's address bar (or another device) to see the application.
