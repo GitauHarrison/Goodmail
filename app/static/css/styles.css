@@ -21,6 +21,9 @@ body::after {
 p{
     padding-bottom: 5px;
 }
+h1{
+    margin-top: 0px;
+}
 /* MEDIA QUIERIES */
 @media all and (max-width: 992px) {
     body::after {
@@ -55,6 +58,7 @@ p{
 img{
 
     border-radius: 7px;
+    padding-bottom: 15px;
 }
 /* ------------------------------------------------- */
 /* FORM */

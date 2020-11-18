@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+            <h1>File Not Found</h1>                                       
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
+            <p>Sorry, the requested page cannot be found.</p>
+            <p>Return to <a href="{{ url_for('home') }}">home page</a>.</p>                                      
+        </div>
+    </div>         
+{% endblock %}
