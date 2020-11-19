@@ -10,3 +10,10 @@ class Config(object):
     START_NGROK=os.environ.get('START_NGROK') is not None
 
     LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
+
+    MAIL_SERVER='smtp.gmail.com'
+    MAIL_PORT=587
+    MAIL_USE_TLS=1
+    MAIL_USERNAME='norulesanymore@gmail.com'
+    MAIL_PASSWORD=b"\xe2z\x91\xaf\x00(\x90\xad\xb2'A\xeeM\x92cy"
+    ADMINS=['tastebolder@gmail.com']
